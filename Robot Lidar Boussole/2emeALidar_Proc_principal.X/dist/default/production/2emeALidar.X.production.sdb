@@ -1,0 +1,967 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47K40 ]
+[d frameptr 4065 ]
+"71 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X/LCD.c
+[e E10131 . `uc
+COMMAND 0
+DATA 1
+]
+"44
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"90
+[v _gotoLCD gotoLCD `(v  1 e 1 0 ]
+[v i1_gotoLCD gotoLCD `(v  1 e 1 0 ]
+"103
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+"113
+[v _lcdWrite lcdWrite `(v  1 e 1 0 ]
+[v i1_lcdWrite lcdWrite `(v  1 e 1 0 ]
+"132
+[v _lcdPrint lcdPrint `(v  1 e 1 0 ]
+"142
+[v _lcdNibble lcdNibble `(v  1 s 1 lcdNibble ]
+[v i1_lcdNibble lcdNibble `(v  1 s 1 i1_lcdNibble ]
+"166 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _C2 C2 `(v  1 e 1 0 ]
+"167
+[v _D2 D2 `(v  1 e 1 0 ]
+"168
+[v _E2 E2 `(v  1 e 1 0 ]
+"169
+[v _F2 F2 `(v  1 e 1 0 ]
+"170
+[v _G2 G2 `(v  1 e 1 0 ]
+"171
+[v _A2 A2 `(v  1 e 1 0 ]
+"172
+[v _B2 B2 `(v  1 e 1 0 ]
+"173
+[v _C3 C3 `(v  1 e 1 0 ]
+[v i1_C3 C3 `(v  1 e 1 0 ]
+"174
+[v _D3 D3 `(v  1 e 1 0 ]
+"175
+[v _E3 E3 `(v  1 e 1 0 ]
+"176
+[v _F3 F3 `(v  1 e 1 0 ]
+"177
+[v _G3 G3 `(v  1 e 1 0 ]
+"178
+[v _A3 A3 `(v  1 e 1 0 ]
+"179
+[v _B3 B3 `(v  1 e 1 0 ]
+"180
+[v _C4 C4 `(v  1 e 1 0 ]
+"182
+[v _init init `(v  1 e 1 0 ]
+"334
+[v _myLowIsr myLowIsr `IIL(v  1 e 1 0 ]
+"349
+[v _myHighIsr myHighIsr `IIH(v  1 e 1 0 ]
+"474
+[v _main main `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+[v i1___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+[v i1___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+[v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
+"89 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _CSSP1 CSSP1 `uc  1 e 1 0 ]
+"90
+[v _READ READ `uc  1 e 1 0 ]
+"91
+[v _WRITE WRITE `uc  1 e 1 0 ]
+"93
+[v _SSP1_ADD_ISR SSP1_ADD_ISR `uc  1 e 1 0 ]
+"94
+[v _SSP1_REG_ISR SSP1_REG_ISR `uc  1 e 1 0 ]
+"95
+[v _SSP1_DATA_ISR SSP1_DATA_ISR `uc  1 e 1 0 ]
+"97
+[v _tempsg tempsg `l  1 e 4 0 ]
+"98
+[v _tempsd tempsd `l  1 e 4 0 ]
+"99
+[v _erreurg erreurg `s  1 e 2 0 ]
+"100
+[v _erreurd erreurd `s  1 e 2 0 ]
+"101
+[v _sigmaerreurg sigmaerreurg `s  1 e 2 0 ]
+"102
+[v _sigmaerreurd sigmaerreurd `s  1 e 2 0 ]
+"103
+[v _consigneg consigneg `s  1 e 2 0 ]
+"104
+[v _consigned consigned `s  1 e 2 0 ]
+"105
+[v _pwmgc pwmgc `s  1 e 2 0 ]
+"106
+[v _pwmdc pwmdc `s  1 e 2 0 ]
+"107
+[v _kpm kpm `uc  1 e 1 0 ]
+"108
+[v _kim kim `uc  1 e 1 0 ]
+"110
+[v _CENCA CENCA `uc  1 e 1 0 ]
+"111
+[v _CENCB CENCB `uc  1 e 1 0 ]
+"112
+[v _consigne consigne `uc  1 e 1 0 ]
+"115
+[v _j j `ul  1 e 4 0 ]
+"52 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f47k40.h
+[v _RX2PPS RX2PPS `VEuc  1 e 1 @3725 ]
+"1287
+[v _RC2REG RC2REG `VEuc  1 e 1 @3737 ]
+"1325
+[v _TX2REG TX2REG `VEuc  1 e 1 @3738 ]
+"1375
+[v _SPBRG2 SPBRG2 `VEuc  1 e 1 @3739 ]
+[s S364 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1560
+[s S373 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_92 1 0 :1:6 
+]
+[s S376 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC92 1 0 :1:6 
+]
+[s S379 . 1 `uc 1 RCD82 1 0 :1:0 
+]
+[u S381 . 1 `S364 1 . 1 0 `S373 1 . 1 0 `S376 1 . 1 0 `S379 1 . 1 0 ]
+[v _RCSTA2bits RCSTA2bits `VES381  1 e 1 @3741 ]
+[s S331 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1721
+[s S340 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_92 1 0 :1:6 
+]
+[s S343 . 1 `uc 1 TXD82 1 0 :1:0 
+]
+[u S345 . 1 `S331 1 . 1 0 `S340 1 . 1 0 `S343 1 . 1 0 ]
+[v _TXSTA2bits TXSTA2bits `VES345  1 e 1 @3742 ]
+[s S404 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"1949
+[s S413 . 1 `uc 1 ABDEN2 1 0 :1:0 
+]
+[s S415 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ABDOVF2 1 0 :1:7 
+]
+[s S418 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BRG162 1 0 :1:3 
+]
+[s S421 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RCIDL2 1 0 :1:6 
+]
+[s S424 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RCMT2 1 0 :1:6 
+]
+[s S427 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP2 1 0 :1:4 
+]
+[s S430 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXCKP2 1 0 :1:4 
+]
+[s S433 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WUE2 1 0 :1:1 
+]
+[u S436 . 1 `S404 1 . 1 0 `S413 1 . 1 0 `S415 1 . 1 0 `S418 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S430 1 . 1 0 `S433 1 . 1 0 ]
+[v _BAUDCON2bits BAUDCON2bits `VES436  1 e 1 @3743 ]
+"4031
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3767 ]
+"4097
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3768 ]
+"7620
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3834 ]
+"7664
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3835 ]
+"7752
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @3837 ]
+"7796
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @3838 ]
+"7884
+[v _RD1PPS RD1PPS `VEuc  1 e 1 @3840 ]
+"8696
+[v _WPUA WPUA `VEuc  1 e 1 @3856 ]
+"8758
+[v _ANSELA ANSELA `VEuc  1 e 1 @3857 ]
+"9192
+[v _WPUB WPUB `VEuc  1 e 1 @3864 ]
+"9254
+[v _ANSELB ANSELB `VEuc  1 e 1 @3865 ]
+"9688
+[v _WPUC WPUC `VEuc  1 e 1 @3872 ]
+"9750
+[v _ANSELC ANSELC `VEuc  1 e 1 @3873 ]
+"9998
+[v _WPUD WPUD `VEuc  1 e 1 @3877 ]
+"10060
+[v _ANSELD ANSELD `VEuc  1 e 1 @3878 ]
+"10287
+[v _WPUE WPUE `VEuc  1 e 1 @3885 ]
+"10325
+[v _ANSELE ANSELE `VEuc  1 e 1 @3886 ]
+"13618
+[v _ADCLK ADCLK `VEuc  1 e 1 @3927 ]
+"13676
+[v _ADREF ADREF `VEuc  1 e 1 @3928 ]
+"13717
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @3929 ]
+"13756
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @3930 ]
+"13833
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @3931 ]
+"14096
+[v _ADPCH ADPCH `VEuc  1 e 1 @3935 ]
+"14154
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @3936 ]
+"14473
+[v _ADRESH ADRESH `VEuc  1 e 1 @3940 ]
+"16284
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @3966 ]
+"16412
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @3967 ]
+"16468
+[v _NVMDAT NVMDAT `VEuc  1 e 1 @3968 ]
+[s S131 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 NVMREG 1 0 :2:6 
+]
+"16559
+[s S139 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NVMREG0 1 0 :1:6 
+`uc 1 NVMREG1 1 0 :1:7 
+]
+[u S143 . 1 `S131 1 . 1 0 `S139 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES143  1 e 1 @3969 ]
+"16604
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @3970 ]
+[s S242 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"16651
+[s S251 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S260 . 1 `S242 1 . 1 0 `S251 1 . 1 0 ]
+[v _LATAbits LATAbits `VES260  1 e 1 @3971 ]
+[s S24 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"16763
+[s S33 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S42 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _LATBbits LATBbits `VES42  1 e 1 @3972 ]
+[s S88 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"16987
+[s S97 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S106 . 1 `S88 1 . 1 0 `S97 1 . 1 0 ]
+[v _LATDbits LATDbits `VES106  1 e 1 @3974 ]
+[s S660 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"17109
+[s S664 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[s S668 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LE3 1 0 :1:3 
+]
+[s S671 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LE4 1 0 :1:4 
+]
+[s S674 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LE5 1 0 :1:5 
+]
+[s S677 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LE6 1 0 :1:6 
+]
+[s S680 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LE7 1 0 :1:7 
+]
+[u S683 . 1 `S660 1 . 1 0 `S664 1 . 1 0 `S668 1 . 1 0 `S671 1 . 1 0 `S674 1 . 1 0 `S677 1 . 1 0 `S680 1 . 1 0 ]
+[v _LATEbits LATEbits `VES683  1 e 1 @3975 ]
+"17169
+[v _TRISA TRISA `VEuc  1 e 1 @3976 ]
+"17291
+[v _TRISB TRISB `VEuc  1 e 1 @3977 ]
+"17413
+[v _TRISC TRISC `VEuc  1 e 1 @3978 ]
+"17535
+[v _TRISD TRISD `VEuc  1 e 1 @3979 ]
+"17657
+[v _TRISE TRISE `VEuc  1 e 1 @3980 ]
+[s S521 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"17743
+[s S530 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S536 . 1 `S521 1 . 1 0 `S530 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES536  1 e 1 @3981 ]
+[s S623 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"17824
+[s S632 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S635 . 1 `S623 1 . 1 0 `S632 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES635  1 e 1 @3982 ]
+[s S555 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"17900
+[s S564 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S568 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S571 . 1 `S555 1 . 1 0 `S564 1 . 1 0 `S568 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES571  1 e 1 @3983 ]
+[s S595 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"17981
+[s S604 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S607 . 1 `S595 1 . 1 0 `S604 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES607  1 e 1 @3984 ]
+"18238
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @3986 ]
+"18258
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @3987 ]
+"18448
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @3989 ]
+"18902
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @3990 ]
+[s S165 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"19069
+[s S174 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S177 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S184 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S193 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S200 . 1 `S165 1 . 1 0 `S174 1 . 1 0 `S177 1 . 1 0 `S184 1 . 1 0 `S193 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES200  1 e 1 @3991 ]
+"19209
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @3992 ]
+"21614
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4006 ]
+"21634
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @4007 ]
+"21654
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4008 ]
+"21835
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4010 ]
+"21855
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @4011 ]
+"21875
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4012 ]
+"22058
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @4014 ]
+"22222
+[v _T6CON T6CON `VEuc  1 e 1 @4017 ]
+"22496
+[v _T6CLKCON T6CLKCON `VEuc  1 e 1 @4019 ]
+"23360
+[v _T2PR T2PR `VEuc  1 e 1 @4028 ]
+"23398
+[v _T2CON T2CON `VEuc  1 e 1 @4029 ]
+"23672
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @4031 ]
+"23910
+[v _TMR5 TMR5 `VEus  1 e 2 @4033 ]
+"24207
+[v _T5CON T5CON `VEuc  1 e 1 @4035 ]
+"24700
+[v _TMR5CLK TMR5CLK `VEuc  1 e 1 @4038 ]
+"25764
+[v _TMR1 TMR1 `VEus  1 e 2 @4045 ]
+"26061
+[v _T1CON T1CON `VEuc  1 e 1 @4047 ]
+"26554
+[v _TMR1CLK TMR1CLK `VEuc  1 e 1 @4050 ]
+"28817
+[v _ADGO ADGO `VEb  1 e 0 @31488 ]
+"30341
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"30344
+[v _GIEH GIEH `VEb  1 e 0 @32663 ]
+"30347
+[v _GIEL GIEL `VEb  1 e 0 @32662 ]
+"30704
+[v _IOCAF6 IOCAF6 `VEb  1 e 0 @30806 ]
+"30728
+[v _IOCAN6 IOCAN6 `VEb  1 e 0 @30814 ]
+"30752
+[v _IOCAP6 IOCAP6 `VEb  1 e 0 @30822 ]
+"30758
+[v _IOCBF0 IOCBF0 `VEb  1 e 0 @30864 ]
+"30782
+[v _IOCBN0 IOCBN0 `VEb  1 e 0 @30872 ]
+"30806
+[v _IOCBP0 IOCBP0 `VEb  1 e 0 @30880 ]
+"30836
+[v _IOCCF2 IOCCF2 `VEb  1 e 0 @30930 ]
+"30839
+[v _IOCCF3 IOCCF3 `VEb  1 e 0 @30931 ]
+"30845
+[v _IOCCF5 IOCCF5 `VEb  1 e 0 @30933 ]
+"30860
+[v _IOCCN2 IOCCN2 `VEb  1 e 0 @30938 ]
+"30863
+[v _IOCCN3 IOCCN3 `VEb  1 e 0 @30939 ]
+"30869
+[v _IOCCN5 IOCCN5 `VEb  1 e 0 @30941 ]
+"30884
+[v _IOCCP2 IOCCP2 `VEb  1 e 0 @30946 ]
+"30887
+[v _IOCCP3 IOCCP3 `VEb  1 e 0 @30947 ]
+"30893
+[v _IOCCP5 IOCCP5 `VEb  1 e 0 @30949 ]
+"30911
+[v _IOCIE IOCIE `VEb  1 e 0 @30228 ]
+"30914
+[v _IOCIF IOCIF `VEb  1 e 0 @30292 ]
+"30917
+[v _IOCIP IOCIP `VEb  1 e 0 @30164 ]
+"30923
+[v _IPEN IPEN `VEb  1 e 0 @32661 ]
+"31745
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"32279
+[v _RC2IE RC2IE `VEb  1 e 0 @30255 ]
+"32282
+[v _RC2IF RC2IF `VEb  1 e 0 @30319 ]
+"32285
+[v _RC2IP RC2IP `VEb  1 e 0 @30191 ]
+"33164
+[v _SSP1IE SSP1IE `VEb  1 e 0 @30248 ]
+"33167
+[v _SSP1IF SSP1IF `VEb  1 e 0 @30312 ]
+"33170
+[v _SSP1IP SSP1IP `VEb  1 e 0 @30184 ]
+"33914
+[v _TMR0IE TMR0IE `VEb  1 e 0 @30229 ]
+"33920
+[v _TMR0IP TMR0IP `VEb  1 e 0 @30165 ]
+"34031
+[v _TMR1IE TMR1IE `VEb  1 e 0 @30256 ]
+"34034
+[v _TMR1IF TMR1IF `VEb  1 e 0 @30320 ]
+"34037
+[v _TMR1IP TMR1IP `VEb  1 e 0 @30192 ]
+"34070
+[v _TMR2IE TMR2IE `VEb  1 e 0 @30257 ]
+"34076
+[v _TMR2IP TMR2IP `VEb  1 e 0 @30193 ]
+"34166
+[v _TMR3IE TMR3IE `VEb  1 e 0 @30258 ]
+"34172
+[v _TMR3IP TMR3IP `VEb  1 e 0 @30194 ]
+"34205
+[v _TMR4IE TMR4IE `VEb  1 e 0 @30259 ]
+"34211
+[v _TMR4IP TMR4IP `VEb  1 e 0 @30195 ]
+"34301
+[v _TMR5IE TMR5IE `VEb  1 e 0 @30260 ]
+"34304
+[v _TMR5IF TMR5IF `VEb  1 e 0 @30324 ]
+"34307
+[v _TMR5IP TMR5IP `VEb  1 e 0 @30196 ]
+"34340
+[v _TMR6IE TMR6IE `VEb  1 e 0 @30261 ]
+"34343
+[v _TMR6IF TMR6IF `VEb  1 e 0 @30325 ]
+"34346
+[v _TMR6IP TMR6IP `VEb  1 e 0 @30197 ]
+"474 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _main main `(v  1 e 1 0 ]
+{
+"494
+} 0
+"182
+[v _init init `(v  1 e 1 0 ]
+{
+"332
+} 0
+"132 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X/LCD.c
+[v _lcdPrint lcdPrint `(v  1 e 1 0 ]
+{
+[v lcdPrint@t t `*.31uc  1 p 1 22 ]
+"136
+} 0
+"44
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"83
+} 0
+"103
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+{
+"106
+} 0
+"90
+[v _gotoLCD gotoLCD `(v  1 e 1 0 ]
+{
+[v gotoLCD@ligne ligne `uc  1 a 1 wreg ]
+[v gotoLCD@ligne ligne `uc  1 a 1 wreg ]
+[v gotoLCD@colonne colonne `uc  1 p 1 22 ]
+"92
+[v gotoLCD@ligne ligne `uc  1 a 1 23 ]
+"98
+} 0
+"113
+[v _lcdWrite lcdWrite `(v  1 e 1 0 ]
+{
+[v lcdWrite@byte byte `uc  1 a 1 wreg ]
+[v lcdWrite@byte byte `uc  1 a 1 wreg ]
+[v lcdWrite@type type `E10131  1 p 1 20 ]
+[v lcdWrite@byte byte `uc  1 a 1 21 ]
+"126
+} 0
+"142
+[v _lcdNibble lcdNibble `(v  1 s 1 lcdNibble ]
+{
+[v lcdNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdNibble@nibble nibble `uc  1 a 1 19 ]
+"153
+} 0
+"177 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _G3 G3 `(v  1 e 1 0 ]
+{
+[v G3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"170
+[v _G2 G2 `(v  1 e 1 0 ]
+{
+[v G2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"176
+[v _F3 F3 `(v  1 e 1 0 ]
+{
+[v F3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"169
+[v _F2 F2 `(v  1 e 1 0 ]
+{
+[v F2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"175
+[v _E3 E3 `(v  1 e 1 0 ]
+{
+[v E3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"168
+[v _E2 E2 `(v  1 e 1 0 ]
+{
+[v E2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"174
+[v _D3 D3 `(v  1 e 1 0 ]
+{
+[v D3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"167
+[v _D2 D2 `(v  1 e 1 0 ]
+{
+[v D2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"180
+[v _C4 C4 `(v  1 e 1 0 ]
+{
+[v C4@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"173
+[v _C3 C3 `(v  1 e 1 0 ]
+{
+[v C3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"166
+[v _C2 C2 `(v  1 e 1 0 ]
+{
+[v C2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"179
+[v _B3 B3 `(v  1 e 1 0 ]
+{
+[v B3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"172
+[v _B2 B2 `(v  1 e 1 0 ]
+{
+[v B2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"178
+[v _A3 A3 `(v  1 e 1 0 ]
+{
+[v A3@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"171
+[v _A2 A2 `(v  1 e 1 0 ]
+{
+[v A2@DUREE DUREE `ul  1 p 4 67 ]
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 28 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 27 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 18 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 26 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 66 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 65 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 57 ]
+"70
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 51 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 44 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 49 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 56 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 55 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 48 ]
+"11
+[v ___fldiv@b b `d  1 p 4 32 ]
+[v ___fldiv@a a `d  1 p 4 36 ]
+"185
+} 0
+"334 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _myLowIsr myLowIsr `IIL(v  1 e 1 0 ]
+{
+"338
+[v myLowIsr@test test `uc  1 a 1 17 ]
+"347
+} 0
+"90 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X/LCD.c
+[v i1_gotoLCD gotoLCD `(v  1 e 1 0 ]
+{
+[v i1gotoLCD@ligne ligne `uc  1 a 1 wreg ]
+[v i1gotoLCD@ligne ligne `uc  1 a 1 wreg ]
+[v i1gotoLCD@colonne colonne `uc  1 p 1 34 ]
+"92
+[v i1gotoLCD@ligne ligne `uc  1 a 1 35 ]
+"98
+} 0
+"113
+[v i1_lcdWrite lcdWrite `(v  1 e 1 0 ]
+{
+[v i1lcdWrite@byte byte `uc  1 a 1 wreg ]
+[v i1lcdWrite@byte byte `uc  1 a 1 wreg ]
+[v i1lcdWrite@type type `E10131  1 p 1 32 ]
+[v i1lcdWrite@byte byte `uc  1 a 1 33 ]
+"126
+} 0
+"142
+[v i1_lcdNibble lcdNibble `(v  1 s 1 i1_lcdNibble ]
+{
+[v i1lcdNibble@nibble nibble `uc  1 a 1 wreg ]
+[v i1lcdNibble@nibble nibble `uc  1 a 1 wreg ]
+[v i1lcdNibble@nibble nibble `uc  1 a 1 19 ]
+"153
+} 0
+"173 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v i1_C3 C3 `(v  1 e 1 0 ]
+{
+[v i1C3@DUREE DUREE `ul  1 p 4 10 ]
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\xxtofl.c
+[v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v i1___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v i1___xxtofl@arg arg `ul  1 a 4 28 ]
+"12
+[v i1___xxtofl@exp exp `uc  1 a 1 27 ]
+"10
+[v i1___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v i1___xxtofl@val val `l  1 p 4 18 ]
+"15
+[v i1___xxtofl@sign sign `uc  1 a 1 26 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fltol.c
+[v i1___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v i1___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v i1___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v i1___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v i1___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v i1___fldiv@grs grs `ul  1 a 4 51 ]
+"22
+[v i1___fldiv@rem rem `ul  1 a 4 44 ]
+"20
+[v i1___fldiv@new_exp new_exp `s  1 a 2 49 ]
+"19
+[v i1___fldiv@aexp aexp `uc  1 a 1 56 ]
+"18
+[v i1___fldiv@bexp bexp `uc  1 a 1 55 ]
+"16
+[v i1___fldiv@sign sign `uc  1 a 1 48 ]
+"11
+[v i1___fldiv@b b `d  1 p 4 32 ]
+[v i1___fldiv@a a `d  1 p 4 36 ]
+"185
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 23 ]
+[v ___awmod@counter counter `uc  1 a 1 22 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 18 ]
+[v ___awmod@divisor divisor `i  1 p 2 20 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 30 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 29 ]
+[v ___awdiv@counter counter `uc  1 a 1 28 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 24 ]
+[v ___awdiv@divisor divisor `i  1 p 2 26 ]
+"41
+} 0
+"349 C:\Users\ulrich\Seafile\IHA-Technique\PLP\Partage SLP\Maquettes pédagogiques\Electronique\Robot Cachan 2025 2ème année Lidar\MpLab\2emeALidar.X\2emeAlidar.c
+[v _myHighIsr myHighIsr `IIH(v  1 e 1 0 ]
+{
+"450
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v i2___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v i2___awdiv@sign sign `uc  1 a 1 11 ]
+[v i2___awdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v i2___awdiv@dividend dividend `i  1 p 2 6 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 8 ]
+"41
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 0 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+"41
+} 0

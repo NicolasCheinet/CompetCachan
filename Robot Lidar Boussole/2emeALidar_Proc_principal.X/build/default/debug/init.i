@@ -1,0 +1,149 @@
+# 1 "init.c"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 288 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
+# 2 "<built-in>" 2
+# 1 "init.c" 2
+void init(void)
+{
+    BUZZER=0;
+    ENL298=0;
+    ALIMCNYD=0;
+    ALIMCNYG=0;
+
+
+    ANSELA=0b10000100;
+    ANSELB=0b00000000;
+    ANSELC=0b00000000;
+    ANSELD=0b00000000;
+    ANSELE=0b00000001;
+
+
+    TRISA=0b11110110;
+    TRISB=0b11000001;
+    TRISC=0b00111101;
+    TRISD=0b01001101;
+    TRISE=0b00001001;
+
+
+    WPUA=0b01000000;
+    WPUB=0b00000000;
+    WPUC=0b00001100;
+    WPUD=0b00000000;
+    WPUE=0b00000000;
+
+
+    ADCON0=0b10000000;
+    ADCON1=0b00000000;
+    ADCON2=0b00000000;
+    ADCON3=0b00000000;
+    ADCLK=0b00011111;
+    ADREF=0b00000000;
+
+
+
+    SSP2STAT=0b00000000;
+    SSP2ADD=0x22;
+    SSP2CON1=0b00101000;
+    SSP2CON3=0b00000000;
+
+
+    TXSTA1bits.SYNC=0; TXSTA1bits.TX9=0; TXSTA1bits.TXEN=1;
+    RCSTA1bits.RX9=0; RCSTA1bits.CREN=1; RCSTA1bits.SPEN=1;
+    BAUDCON1bits.BRG16=1; TXSTA1bits.BRGH=0; SPBRG1=34;
+
+
+    TXSTA2bits.SYNC=0; TXSTA2bits.TX9=0; TXSTA2bits.TXEN=1;
+    RCSTA2bits.RX9=0; RCSTA2bits.CREN=1; RCSTA2bits.SPEN=1;
+    BAUDCON2bits.BRG16=1; TXSTA2bits.BRGH=0; SPBRG2=34;
+
+
+
+    T2PR=255;
+    CCPTMRS=0b10100101;
+
+    CCP1CON=0b10011100;
+    CCPR1H=127;
+    CCPR1L=0;
+
+    CCP2CON=0b10011100;
+    CCPR2H=127;
+    CCPR2L=0;
+
+
+
+    RC6PPS=0x05;
+    RC7PPS=0x06;
+
+    RD2PPS=0x11;
+    RD3PPS=0x12;
+    SSP2CLKPPS=0b00011010;
+    SSP2DATPPS=0b00011011;
+    RX2PPS=0b00011000;
+    RD1PPS=0x0B;
+    RX1PPS=0b00010000;
+    RC1PPS=0x09;
+
+
+    T1CON=0b00110111;
+    TMR1CLK=0b00000001;
+
+    T2CON=0b10010000;
+    T2CLKCON=0b00000001;
+
+
+
+
+    T3CON=0b00000110;
+    TMR3CLK=0b00000001;
+    TMR3=49536;
+
+    T5CON=0b00110111;
+    TMR5CLK=0b00000001;
+
+    T6CON=0b11100000;
+    T6CLKCON=0b00000001;
+
+
+    GIE=1; GIEH=1; GIEL=1; IPEN=1;
+    PEIE=1;
+    IOCIE=1; IOCIP=1;
+
+    TMR0IE=0; TMR0IP=0;
+    TMR1IE=1; TMR1IP=1;
+    TMR2IE=0; TMR2IP=0;
+    TMR3IE=1; TMR3IP=0;
+    TMR4IE=0; TMR4IP=0;
+    TMR5IE=1; TMR5IP=1;
+    TMR6IE=1; TMR6IP=1;
+
+    SSP2IF=0;
+    SSP2IE=1;
+    SSP2IP=1;
+
+    RC1IP=1; RC1IE=1;
+    RC2IP=0; RC2IE=1;
+
+    IOCCN2=1;
+    IOCCP2=1;
+    IOCAN6=1;
+    IOCAP6=1;
+    IOCCN3=1;
+    IOCCP3=0;
+    IOCBN0=1;
+    IOCBP0=1;
+    IOCCN5=1;
+    IOCCP5=1;
+
+    RE=1;
+    initLCD();
+    clearLCD();
+    gotoLCD(0,0); lcdPrint("ROBOT 2A IUT HAG");
+    gotoLCD(1,0); lcdPrint(" LIDAR COMPASS  ");
+    __delay_ms(500);
+    clearLCD();
+
+}

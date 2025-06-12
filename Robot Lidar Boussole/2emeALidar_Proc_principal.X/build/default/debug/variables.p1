@@ -1,0 +1,277 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"1 variables.c
+[; ;variables.c: 1: unsigned char CSSP2=0;
+[v _CSSP2 `uc ~T0 @X0 1 e ]
+[i _CSSP2
+-> -> 0 `i `uc
+]
+"2
+[; ;variables.c: 2: unsigned char READ=0;
+[v _READ `uc ~T0 @X0 1 e ]
+[i _READ
+-> -> 0 `i `uc
+]
+"3
+[; ;variables.c: 3: unsigned char WRITE=0;
+[v _WRITE `uc ~T0 @X0 1 e ]
+[i _WRITE
+-> -> 0 `i `uc
+]
+"4
+[; ;variables.c: 4: unsigned char SSP2_ADD_ISR=0;
+[v _SSP2_ADD_ISR `uc ~T0 @X0 1 e ]
+[i _SSP2_ADD_ISR
+-> -> 0 `i `uc
+]
+"5
+[; ;variables.c: 5: unsigned char SSP2_REG_ISR=0;
+[v _SSP2_REG_ISR `uc ~T0 @X0 1 e ]
+[i _SSP2_REG_ISR
+-> -> 0 `i `uc
+]
+"6
+[; ;variables.c: 6: unsigned char SSP2_DATA_ISR=0;
+[v _SSP2_DATA_ISR `uc ~T0 @X0 1 e ]
+[i _SSP2_DATA_ISR
+-> -> 0 `i `uc
+]
+"8
+[; ;variables.c: 8: unsigned char MAGN_X_H=0;
+[v _MAGN_X_H `uc ~T0 @X0 1 e ]
+[i _MAGN_X_H
+-> -> 0 `i `uc
+]
+"9
+[; ;variables.c: 9: unsigned char MAGN_X_L=0;
+[v _MAGN_X_L `uc ~T0 @X0 1 e ]
+[i _MAGN_X_L
+-> -> 0 `i `uc
+]
+"10
+[; ;variables.c: 10: signed long MAGN_X=0;
+[v _MAGN_X `l ~T0 @X0 1 e ]
+[i _MAGN_X
+-> -> 0 `i `l
+]
+"11
+[; ;variables.c: 11: signed long MAGN_X_TOTAL=0;
+[v _MAGN_X_TOTAL `l ~T0 @X0 1 e ]
+[i _MAGN_X_TOTAL
+-> -> 0 `i `l
+]
+"12
+[; ;variables.c: 12: unsigned char MAGN_Y_H=0;
+[v _MAGN_Y_H `uc ~T0 @X0 1 e ]
+[i _MAGN_Y_H
+-> -> 0 `i `uc
+]
+"13
+[; ;variables.c: 13: unsigned char MAGN_Y_L=0;
+[v _MAGN_Y_L `uc ~T0 @X0 1 e ]
+[i _MAGN_Y_L
+-> -> 0 `i `uc
+]
+"14
+[; ;variables.c: 14: signed long MAGN_Y=0;
+[v _MAGN_Y `l ~T0 @X0 1 e ]
+[i _MAGN_Y
+-> -> 0 `i `l
+]
+"15
+[; ;variables.c: 15: signed long MAGN_Y_TOTAL=0;
+[v _MAGN_Y_TOTAL `l ~T0 @X0 1 e ]
+[i _MAGN_Y_TOTAL
+-> -> 0 `i `l
+]
+"16
+[; ;variables.c: 16: signed long MAGN_X_MIN=0;
+[v _MAGN_X_MIN `l ~T0 @X0 1 e ]
+[i _MAGN_X_MIN
+-> -> 0 `i `l
+]
+"17
+[; ;variables.c: 17: signed long MAGN_X_MAX=-32000;
+[v _MAGN_X_MAX `l ~T0 @X0 1 e ]
+[i _MAGN_X_MAX
+-> -U -> 32000 `i `l
+]
+"18
+[; ;variables.c: 18: signed long MAGN_Y_MIN=32000;
+[v _MAGN_Y_MIN `l ~T0 @X0 1 e ]
+[i _MAGN_Y_MIN
+-> -> 32000 `i `l
+]
+"19
+[; ;variables.c: 19: signed long MAGN_Y_MAX=0;
+[v _MAGN_Y_MAX `l ~T0 @X0 1 e ]
+[i _MAGN_Y_MAX
+-> -> 0 `i `l
+]
+"20
+[; ;variables.c: 20: signed long MAGN_X_ZERO=0;
+[v _MAGN_X_ZERO `l ~T0 @X0 1 e ]
+[i _MAGN_X_ZERO
+-> -> 0 `i `l
+]
+"21
+[; ;variables.c: 21: signed long MAGN_Y_ZERO=0;
+[v _MAGN_Y_ZERO `l ~T0 @X0 1 e ]
+[i _MAGN_Y_ZERO
+-> -> 0 `i `l
+]
+"22
+[; ;variables.c: 22: float ANGLE_MAGN=0;
+[v _ANGLE_MAGN `f ~T0 @X0 1 e ]
+[i _ANGLE_MAGN
+-> -> 0 `i `f
+]
+"24
+[; ;variables.c: 24: signed long tempsg=87001;
+[v _tempsg `l ~T0 @X0 1 e ]
+[i _tempsg
+-> 87001 `l
+]
+"25
+[; ;variables.c: 25: signed long tempsd=87001;
+[v _tempsd `l ~T0 @X0 1 e ]
+[i _tempsd
+-> 87001 `l
+]
+"26
+[; ;variables.c: 26: signed short erreurg=0;
+[v _erreurg `s ~T0 @X0 1 e ]
+[i _erreurg
+-> -> 0 `i `s
+]
+"27
+[; ;variables.c: 27: signed short erreurd=0;
+[v _erreurd `s ~T0 @X0 1 e ]
+[i _erreurd
+-> -> 0 `i `s
+]
+"28
+[; ;variables.c: 28: signed short sigmaerreurg=0;
+[v _sigmaerreurg `s ~T0 @X0 1 e ]
+[i _sigmaerreurg
+-> -> 0 `i `s
+]
+"29
+[; ;variables.c: 29: signed short sigmaerreurd=0;
+[v _sigmaerreurd `s ~T0 @X0 1 e ]
+[i _sigmaerreurd
+-> -> 0 `i `s
+]
+"30
+[; ;variables.c: 30: signed short consigneg=0;
+[v _consigneg `s ~T0 @X0 1 e ]
+[i _consigneg
+-> -> 0 `i `s
+]
+"31
+[; ;variables.c: 31: signed short consigned=0;
+[v _consigned `s ~T0 @X0 1 e ]
+[i _consigned
+-> -> 0 `i `s
+]
+"32
+[; ;variables.c: 32: signed short pwmgc=0;
+[v _pwmgc `s ~T0 @X0 1 e ]
+[i _pwmgc
+-> -> 0 `i `s
+]
+"33
+[; ;variables.c: 33: signed short pwmdc=0;
+[v _pwmdc `s ~T0 @X0 1 e ]
+[i _pwmdc
+-> -> 0 `i `s
+]
+"34
+[; ;variables.c: 34: char kpm=40;
+[v _kpm `uc ~T0 @X0 1 e ]
+[i _kpm
+-> -> 40 `i `uc
+]
+"35
+[; ;variables.c: 35: char kim=24;
+[v _kim `uc ~T0 @X0 1 e ]
+[i _kim
+-> -> 24 `i `uc
+]
+"37
+[; ;variables.c: 37: unsigned char CENCA=0;
+[v _CENCA `uc ~T0 @X0 1 e ]
+[i _CENCA
+-> -> 0 `i `uc
+]
+"38
+[; ;variables.c: 38: unsigned char CENCB=0;
+[v _CENCB `uc ~T0 @X0 1 e ]
+[i _CENCB
+-> -> 0 `i `uc
+]
+"39
+[; ;variables.c: 39: unsigned short consigne=0;
+[v _consigne `us ~T0 @X0 1 e ]
+[i _consigne
+-> -> 0 `i `us
+]
+"41
+[; ;variables.c: 41: unsigned long millisecondes=0;
+[v _millisecondes `ul ~T0 @X0 1 e ]
+[i _millisecondes
+-> -> -> 0 `i `l `ul
+]
+"43
+[; ;variables.c: 43: unsigned short CPTTMR3=0;
+[v _CPTTMR3 `us ~T0 @X0 1 e ]
+[i _CPTTMR3
+-> -> 0 `i `us
+]
+"45
+[; ;variables.c: 45: unsigned char RC1REG_DATA=0;
+[v _RC1REG_DATA `uc ~T0 @X0 1 e ]
+[i _RC1REG_DATA
+-> -> 0 `i `uc
+]
+"46
+[; ;variables.c: 46: unsigned char RC2REG_DATA=0;
+[v _RC2REG_DATA `uc ~T0 @X0 1 e ]
+[i _RC2REG_DATA
+-> -> 0 `i `uc
+]
+"48
+[; ;variables.c: 48: unsigned char CPT_RC1=0;
+[v _CPT_RC1 `uc ~T0 @X0 1 e ]
+[i _CPT_RC1
+-> -> 0 `i `uc
+]
+"50
+[; ;variables.c: 50: unsigned short angle_max=0;
+[v _angle_max `us ~T0 @X0 1 e ]
+[i _angle_max
+-> -> 0 `i `us
+]
+"51
+[; ;variables.c: 51: unsigned short angle_min=0;
+[v _angle_min `us ~T0 @X0 1 e ]
+[i _angle_min
+-> -> 0 `i `us
+]
+"52
+[; ;variables.c: 52: unsigned short distance_max=0;
+[v _distance_max `us ~T0 @X0 1 e ]
+[i _distance_max
+-> -> 0 `i `us
+]
+"53
+[; ;variables.c: 53: unsigned short distance_min=0;
+[v _distance_min `us ~T0 @X0 1 e ]
+[i _distance_min
+-> -> 0 `i `us
+]
+"54
+[; ;variables.c: 54: unsigned short ADR=0;
+[v _ADR `us ~T0 @X0 1 e ]
+[i _ADR
+-> -> 0 `i `us
+]

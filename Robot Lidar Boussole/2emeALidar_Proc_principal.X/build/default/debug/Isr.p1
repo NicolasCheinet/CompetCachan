@@ -1,0 +1,42 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt low_priority ]
+"3 Isr.c
+[; ;Isr.c: 3:     LowIsr();
+[v _LowIsr `(i ~T0 @X0 0 e? ]
+[t T2 __interrupt high_priority ]
+"8
+[; ;Isr.c: 8:     HighIsr();
+[v _HighIsr `(i ~T0 @X0 0 e? ]
+[v $root$_myLowIsr `(v ~T0 @X0 0 e ]
+"1 Isr.c
+[; ;Isr.c: 1: void __attribute__((picinterrupt(("low_priority")))) myLowIsr(void)
+[v _myLowIsr `(v ~T1 @X0 1 ef ]
+"2
+[; ;Isr.c: 2: {
+{
+[e :U _myLowIsr ]
+[f ]
+"3
+[; ;Isr.c: 3:     LowIsr();
+[e ( _LowIsr ..  ]
+"4
+[; ;Isr.c: 4: }
+[e :UE 1 ]
+}
+[v $root$_myHighIsr `(v ~T0 @X0 0 e ]
+"6
+[; ;Isr.c: 6: void __attribute__((picinterrupt(("high_priority")))) myHighIsr(void)
+[v _myHighIsr `(v ~T2 @X0 1 ef ]
+"7
+[; ;Isr.c: 7: {
+{
+[e :U _myHighIsr ]
+[f ]
+"8
+[; ;Isr.c: 8:     HighIsr();
+[e ( _HighIsr ..  ]
+"9
+[; ;Isr.c: 9: }
+[e :UE 2 ]
+}
